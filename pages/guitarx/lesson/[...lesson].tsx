@@ -6,10 +6,16 @@ import { Lessons } from '@/components/learn-guitar-position/lesson-list';
 console.log(Lessons);
 
 const Lesson: React.FC = (props) => {
-  console.log('asldkfjklasdjlkfasdf');
   const router = useRouter();
   const specs = router.query.lesson || [];
   const [major, minor] = specs.map((v) => parseInt(v));
+  React.useEffect(() => {
+    const get = async () => {
+      const resp = await fetch('http://davidkim.info:2001/api/posts');
+      console.log(await resp.json());
+    };
+    get();
+  }, []);
   if (specs.length !== 2) {
     return null;
   }
