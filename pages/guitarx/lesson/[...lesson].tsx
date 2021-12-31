@@ -6,9 +6,13 @@ import { Lessons } from '@/components/learn-guitar-position/lesson-list';
 console.log(Lessons);
 
 const Lesson: React.FC = (props) => {
+  console.log('asldkfjklasdjlkfasdf');
   const router = useRouter();
   const specs = router.query.lesson || [];
   const [major, minor] = specs.map((v) => parseInt(v));
+  if (specs.length !== 2) {
+    return null;
+  }
   // try {
   //   Lessonx = lazy(
   //     () => import(`@/gx/components/Lesson${major}/SubLesson${minor}/App.js`)
