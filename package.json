@@ -1,0 +1,42 @@
+{
+  "name": "strongmove",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.5",
+    "@strongmove/react-pro-sidebar-extras": "~1.0.11",
+    "@xstate/inspect": "latest",
+    "@xstate/react": "latest",
+    "immutability-helper": "latest",
+    "lodash": "^4.17.21",
+    "material-ui-confirm": "latest",
+    "mobx": "^6.3.10",
+    "mobx-react-lite": "^3.2.2",
+    "next": "12.0.7",
+    "node-sass": "^6.0.1",
+    "pngjs": "latest",
+    "react": "17.0.2",
+    "react-circular-progressbar": "^2.0.4",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-intl": "latest",
+    "react-pro-sidebar": "^0.7.1",
+    "recoil": "latest",
+    "tone": "latest",
+    "xstate": "^4.26.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
+}
